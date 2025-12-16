@@ -68,22 +68,30 @@ Copy code
     }
   ]
 }
-🧾 Response Fields
-Top-Level Fields
-Field	Description
-status	Request status
-page	Current page
-limit	Posts per page
-total	Total public posts
-total_pages	Total pages available
-has_more	Indicates more pages
-posts	Array of post objects
+## 🧾 Response Fields
 
-Post Object Fields
-Field	Description
-id / post_id	Unique post identifier
-post_type	Type of post (e.g., text, article)
-time	Post creation timestamp
-title	Article title (empty if not an article)
-description	Clean text content (HTML removed)
-tags	List of tags
+### Top-Level Fields
+
+| Field | Description |
+|------|------------|
+| `status` | Request status |
+| `page` | Current page number |
+| `limit` | Number of posts per page |
+| `total` | Total number of public posts |
+| `total_pages` | Total pages available |
+| `has_more` | Indicates whether more pages exist |
+| `posts` | Array of post objects |
+
+---
+
+### Post Object Fields
+
+| Field | Description |
+|------|------------|
+| `id` / `post_id` | Unique post identifier |
+| `post_type` | Type of post (e.g., `text`, `article`) |
+| `time` | Post creation timestamp |
+| `title` | Article title (empty if not an article) |
+| `description` | Clean text content (HTML removed) |
+| `tags` | List of associated tags |
+
