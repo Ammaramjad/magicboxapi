@@ -4,7 +4,7 @@ This repository provides documentation and a reference implementation for the **
 
 The API allows developers, analysts, and researchers to retrieve **public, approved posts** from the MagicBox social platform in a clean, structured, and read-only JSON format.
 
----
+
 
 ## 🌐 Base URL
 
@@ -40,15 +40,12 @@ Returns a paginated list of public posts, ordered from newest to oldest.
 curl "https://magicbox.mg/api/public_posts.php"
 Paginated request
 bash
-Copy code
 curl "https://magicbox.mg/api/public_posts.php?page=2&limit=20"
 Maximum allowed limit
 bash
-Copy code
 curl "https://magicbox.mg/api/public_posts.php?page=1&limit=100"
 📦 Example Response
 json
-Copy code
 {
   "status": "success",
   "page": 1,
